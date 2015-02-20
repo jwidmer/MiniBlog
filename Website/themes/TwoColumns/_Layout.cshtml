@@ -41,7 +41,7 @@
 
     <div class="container">
         <header role="banner">
-            <span itemprop="name"><a href="~/" itemprop="url">@Blog.Title</a></span><br />
+            <span itemprop="name" style="font-style: italic; font-family: 'Segoe UI', Tahoma"><a href="~/" itemprop="url">@Blog.Title</a></span><br />
             <em>@Blog.Description</em>
         </header>
 
@@ -64,13 +64,13 @@
             }
         </div>
 
-        <aside role="complementary" class="col-md-3 col-md-offset-1">
-            <section>
-                <h3>About me</h3>
+        <aside role="complementary" class="col-md-3 col-md-offset-1 side-bar">
+            @*<section>
+                <h3>About us</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper.
                 </p>
-            </section>
+            </section>*@
             <section>
                 <h3>Categories</h3>
                 <ul>
@@ -80,12 +80,16 @@
                 </ul>
             </section>
             <section>
-                <h3>My side projects</h3>
+                <h3>Links we love</h3>
                 <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
+                    <li><a href="http://higginsfamilyadventure.blogspot.com/">Higgin's Family Adventure</a></li>
+                    <li><a href="http://www.unschoolingparadise.com/">Unschooling Paradise</a></li>
+                    <li><a target="_blank" href="http://www.amazon.com/gp/prime/pipeline/prime_gifting_landing/?ref_=assoc_tag_ph_1402131587292&ie=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=jeffwids02-20&linkId=PCDGZJVHWNY57DG2">We love Amazon Prime!</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=jeffwids02-20&l=pf4&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+                    <li><a href="http://www.instantzombie.com">Coming soon... Instant Zombie - Instant Minecraft Servers!</a></li>
                 </ul>
+            </section>
+            <section>
+                <iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=jeffwids02-20&o=1&p=21&l=ur1&category=hm925_1125vac&banner=0F2ES8DR1WDYKF7HXBR2&f=ifr&linkID=AXEV6RNF5YJJQHG2" width="125" height="125" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
             </section>
         </aside>
     </div>
@@ -99,7 +103,8 @@
         }
         <span>
             Copyright &copy; @DateTime.Now.Year
-            <a href="http://madskristensen.net" itemprop="url name">Mads Kristensen</a>
+            <a href="https://twitter.com/jeffwids" itemprop="url name">Jeff Widmer</a>
+            <span class="text-muted" style="font-size:70%;">(@HttpContext.Current.Server.MachineName)</span>
         </span>
     </footer>
 
